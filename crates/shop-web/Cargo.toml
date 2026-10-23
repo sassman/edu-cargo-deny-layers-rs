@@ -5,3 +5,6 @@ edition = "2021"
 
 [dependencies]
 shop-orders.workspace = true
+
+[dev-dependencies]
+shop-store.workspace = true

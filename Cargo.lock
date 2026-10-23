@@ -501,7 +501,6 @@ dependencies = [
 name = "shop-orders"
 version = "0.1.0"
 dependencies = [
- "postgres",
  "shop-store",
 ]
 
@@ -517,6 +516,7 @@ name = "shop-web"
 version = "0.1.0"
 dependencies = [
  "shop-orders",
+ "shop-store",
 ]
 
 [[package]]
