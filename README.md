@@ -1,7 +1,7 @@
 # edu-cargo-deny-layers-rs
 
 The example workspace from the blog post
-[your architecture diagram can't fail a build - cargo-deny can](https://d34dl0ck.me/).
+[your architecture diagram can't fail a build - cargo-deny can](https://d34dl0ck.me/your-architecture-diagram-cant-fail-a-build/index.html).
 
 A toy online shop in four crates that stack on top of each other:
 
