@@ -6,3 +6,8 @@ multiple-versions = "allow"
 [[bans.deny]]
 name = "shop-store"
 wrappers = ["shop-orders", "shop-app"]
+
+# the database driver lives behind the store, nobody else gets a connection
+[[bans.deny]]
+name = "postgres"
+wrappers = ["shop-store"]

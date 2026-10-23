@@ -5,3 +5,4 @@ edition = "2021"
 
 [dependencies]
 shop-store.workspace = true
+postgres = "0.19"   # "just for one quick query"
