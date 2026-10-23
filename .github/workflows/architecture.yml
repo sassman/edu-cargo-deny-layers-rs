@@ -1,0 +1,11 @@
+name: architecture
+on: [push, pull_request]
+jobs:
+  bans:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: EmbarkStudios/cargo-deny-action@v2
+        with:
+          command: check bans
+          command-arguments: -D warnings   # options of `check`, after the command
