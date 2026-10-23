@@ -16,4 +16,4 @@ wrappers = ["shop-web"]
 # the database driver lives behind the store, nobody else gets a connection
 [[bans.deny]]
 name = "postgres"
-wrappers = ["shop-store"]
+wrappers = ["shop-store", "shop-web"]
