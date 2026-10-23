@@ -5,6 +5,7 @@ members = [
     "crates/shop-web",      # answers the HTTP requests from the browser
     "crates/shop-orders",   # the rules: is this your order? is it cancelled?
     "crates/shop-store",    # reads and writes the database
+    "crates/shop-store-in-mem", # a fake store for tests, no database
 ]
 
 # every crate of the shop, introduced once, so the others can refer to it by name
@@ -12,3 +13,4 @@ members = [
 shop-web    = { path = "crates/shop-web" }
 shop-orders = { path = "crates/shop-orders" }
 shop-store  = { path = "crates/shop-store" }
+shop-store-in-mem = { path = "crates/shop-store-in-mem" }

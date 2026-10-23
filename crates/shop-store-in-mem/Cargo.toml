@@ -1,0 +1,6 @@
+[package]
+name = "shop-store-in-mem"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]

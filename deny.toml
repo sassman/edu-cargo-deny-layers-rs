@@ -7,6 +7,12 @@ multiple-versions = "allow"
 name = "shop-store"
 wrappers = ["shop-orders", "shop-app"]
 
+# the in-memory store is a test double: shop-web takes it as a dev-dependency only,
+# so it never ends up in the program shop-app builds
+[[bans.deny]]
+name = "shop-store-in-mem"
+wrappers = ["shop-web"]
+
 # the database driver lives behind the store, nobody else gets a connection
 [[bans.deny]]
 name = "postgres"

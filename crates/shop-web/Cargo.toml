@@ -7,4 +7,4 @@ edition = "2021"
 shop-orders.workspace = true
 
 [dev-dependencies]
-shop-store.workspace = true
+shop-store-in-mem.workspace = true
