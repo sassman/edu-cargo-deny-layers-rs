@@ -1,0 +1,8 @@
+[bans]
+# ignore that for now
+multiple-versions = "allow"
+
+# the store is reached through the order rules, or by the app that plugs it in
+[[bans.deny]]
+name = "shop-store"
+wrappers = ["shop-orders", "shop-app"]
