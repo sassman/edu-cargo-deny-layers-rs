@@ -27,5 +27,4 @@ name = "shop-web"
 version = "0.1.0"
 dependencies = [
  "shop-orders",
- "shop-store",
 ]
