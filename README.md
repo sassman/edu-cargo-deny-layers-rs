@@ -1,7 +1,7 @@
 # edu-cargo-deny-layers-rs
 
 The example workspace from the blog post
-[forbid the shortcut - layer rules with cargo deny](https://d34dl0ck.me/).
+[your architecture diagram can't fail a build - cargo-deny can](https://d34dl0ck.me/).
 
 A toy online shop in four crates that stack on top of each other:
 
