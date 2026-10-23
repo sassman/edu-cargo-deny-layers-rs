@@ -1,0 +1,9 @@
+[package]
+name = "shop-app"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+shop-web.workspace = true
+shop-orders.workspace = true
+shop-store.workspace = true

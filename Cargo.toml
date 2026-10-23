@@ -1,0 +1,14 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/shop-app",      # starts the program and plugs the parts together
+    "crates/shop-web",      # answers the HTTP requests from the browser
+    "crates/shop-orders",   # the rules: is this your order? is it cancelled?
+    "crates/shop-store",    # reads and writes the database
+]
+
+# every crate of the shop, introduced once, so the others can refer to it by name
+[workspace.dependencies]
+shop-web    = { path = "crates/shop-web" }
+shop-orders = { path = "crates/shop-orders" }
+shop-store  = { path = "crates/shop-store" }
